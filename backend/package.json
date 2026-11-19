@@ -1,0 +1,20 @@
+{
+  "name": "workflow-automation-builder-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check config/database.js && node --check app.js && node --check controllers/authController.js && node --check controllers/dashboardController.js && node --check controllers/executionController.js && node --check controllers/notificationController.js && node --check controllers/settingsController.js && node --check controllers/taskController.js && node --check controllers/workflowController.js && node --check middleware/requireAuth.js && node --check models/Execution.js && node --check models/Notification.js && node --check models/Task.js && node --check models/User.js && node --check models/Workflow.js && node --check routes/authRoutes.js && node --check routes/dashboardRoutes.js && node --check routes/executionRoutes.js && node --check routes/notificationRoutes.js && node --check routes/settingsRoutes.js && node --check routes/taskRoutes.js && node --check routes/workflowRoutes.js && node --check services/actionExecutor.js && node --check services/conditionEvaluator.js && node --check services/workflowEngine.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  }
+}

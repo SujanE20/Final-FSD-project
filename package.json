@@ -1,0 +1,11 @@
+{
+  "name": "workflow-automation-builder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "start": "node scripts/dev.js",
+    "check": "npm run check --prefix server && npm run test --prefix server && npm run build --prefix client"
+  }
+}
